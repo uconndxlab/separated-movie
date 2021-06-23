@@ -1,5 +1,7 @@
 // Utility function
-function Util () {};
+// function Util () {};
+// made it global -bdaley
+window.Util = {};
 
 /* 
 	class manipulation functions

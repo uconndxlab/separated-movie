@@ -105,3 +105,6 @@ dist
 
 # vscode
 .vscode
+
+# stupid mac
+/.DS_Store
