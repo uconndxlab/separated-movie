@@ -28,12 +28,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #101010;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #101010;
   text-shadow: none;
 }
 
@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +193,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -209,11 +210,11 @@ textarea {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -261,3 +262,180 @@ textarea {
   }
 }
 
+
+* {
+  scroll-behavior: smooth;
+}
+
+* h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+* h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+* p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+* a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.synopsis-sec {
+  padding: 1em;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.timeline {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.timeline-head {
+  display: flex;
+  justify-content: center;
+  color: #dfdfdf;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.none {
+  padding-top: 1em;
+}
+
+.read-more {
+  border: #dfdfdf 2px solid;
+  border-radius: 50px;
+  background: none;
+  color: #dfdfdf;
+  font-family: Gotham;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+footer {
+  background-color: #101010;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 320px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  body {
+    background-color: #dfdfdf;
+  }
+
+  .video-background-holder {
+    position: relative;
+    background-color: #101010;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .video-background-holder video {
+    display: none;
+  }
+
+  .video-background-content p {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .header-btn {
+    color: #dfdfdf !important;
+    text-decoration: none;
+    background: none;
+    padding: 20px;
+    border: 4px solid #dfdfdf !important;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 2rem;
+  }
+
+  .header-btn:hover {
+    color: #dfdfdf !important;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  body {
+    background-color: #dfdfdf;
+  }
+
+  .video-background-holder {
+    height: 100vh;
+    min-height: 25rem;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .video-background-holder video {
+    display: initial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .video-background-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .video-background-content p {
+    text-align: center;
+  }
+
+  .video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #101010;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .header-btn {
+    transition: all 0.4s ease 0s;
+    margin: 0.5rem;
+  }
+
+  .header-btn:hover {
+    color: #dfdfdf !important;
+    text-decoration: none;
+    background: #8b0000;
+    border-color: #8b0000 !important;
+    transition: all 0.4s ease 0s;
+  }
+}
