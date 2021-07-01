@@ -1,11 +1,3 @@
-function openNav() {
-  document.getElementById("mySidenav").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.display = "none";
-}
-
 var min_w = 300;
 var vid_w_orig;
 var vid_h_orig;

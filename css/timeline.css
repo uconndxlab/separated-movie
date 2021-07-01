@@ -3287,7 +3287,6 @@ mark {
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(../img/tl-arrow.svg) no-repeat 0 0;
 }
 .js .timeline__navigation:hover {
   border-color: #8b0000;

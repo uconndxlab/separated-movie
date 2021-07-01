@@ -96,9 +96,10 @@ textarea {
 /* default links */
 a,
 a:visited {
-  transition: all 0.4s ease 0s;
+  transition: all .4s ease 0s;
   text-decoration: none;
-  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+  color: var(--primary)
 }
 
 a:hover {
@@ -107,9 +108,11 @@ a:hover {
   border-bottom: 1px solid transparent;
 }
 
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -200,9 +203,9 @@ a:hover {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -213,6 +216,7 @@ a:hover {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -229,11 +233,11 @@ a:hover {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -281,136 +285,47 @@ a:hover {
   }
 }
 
+
 * {
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 * h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
 * h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
 * p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
 }
 
 * a {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
 }
 
-/* Global CSS Start */
-.sidenav {
-  display: none;
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  background-color: #101010;
-  overflow-x: hidden;
-  padding-top: 60px;
-  border-right: 1px solid #dfdfdf;
-}
-.nav-btn {
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  padding: 5px;
-  margin: 1.25rem;
-  border-radius: 5px;
-  color: #8b0000;
-  background-color: #dfdfdf;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #dfdfdf;
-  display: block;
-  font-family: "FontAwesome";
-}
-.fa-home::before {
-  padding-right: 10px;
-}
-.fa-user::before {
-  padding-right: 10px;
-}
-
-.sidenav a:hover {
-  color: #dfdfdf;
-  background-color: #8b0000;
-}
-.sidenav a:visited {
-  border-bottom: #101010;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.sidenav .closebtn:hover {
-  background-color: #10101000;
-  border: #10101000;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-footer {
-  background-color: #101010;
-}
-
-footer p {
-  margin: 0 auto;
-}
-
-/* Global CSS End */
-
-/* Home Page Start */
 body {
   background-color: #f8f8f8;
 }
+
 .synopsis-sec {
   padding: 1em;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.synopsis-sec h2 {
-  margin-bottom: 1rem;
-}
 
-.tl-intro {
-  background-color: #101010;
-}
-.tl-intro p {
-  color: #dfdfdf;
-  text-align: center;
-  padding-top: 5rem;
-}
 .timeline {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
 .timeline-head {
   display: flex;
   justify-content: center;
@@ -418,6 +333,11 @@ body {
   padding-bottom: 2em;
   text-align: center;
 }
+
+.none {
+  padding-top: 1em;
+}
+
 .read-more {
   border: #dfdfdf 2px solid;
   border-radius: 50px;
@@ -429,7 +349,17 @@ body {
   width: 150px;
 }
 
+footer {
+  background-color: #101010;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
 @media only screen and (min-device-width: 320px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
   body {
     background-color: #dfdfdf;
   }
@@ -438,37 +368,39 @@ body {
     position: relative;
     background-color: #101010;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
   .video-background-holder video {
     display: none;
   }
-  .video-background-content {
-    padding: 5px;
-    margin: 0 auto;
-  }
+
   .video-background-content p {
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    text-align: left;
+    padding: 10px;
   }
-  .header-imgs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  .header-btn {
+    color: #dfdfdf !important;
+    text-decoration: none;
+    background: none;
+    padding: 20px;
+    border: 4px solid #dfdfdf !important;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 2rem;
   }
-  .header-imgs img {
-    width: 90px;
-    height: auto;
-    margin-top: 0;
-    margin: 1rem;
+
+  .header-btn:hover {
+    color: #dfdfdf !important;
+    text-decoration: none;
   }
 }
 
 @media only screen and (min-device-width: 768px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
   body {
     background-color: #dfdfdf;
   }
@@ -502,15 +434,9 @@ body {
     position: relative;
     z-index: 2;
   }
-  .header-imgs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  #uconn-logo {
-    width: 150px;
-    height: auto;
+
+  .video-background-content p {
+    text-align: center;
   }
 
   .video-background-overlay {
@@ -537,145 +463,3 @@ body {
     transition: all 0.4s ease 0s;
   }
 }
-@media only screen and (min-device-width: 1024px) {
-  .header-imgs img {
-    width: 150px;
-    height: auto;
-  }
-  #uconn-logo {
-    width: 170px;
-    height: auto;
-  }
-  #syracuse-logo {
-    width: 120px;
-    height: auto;
-  }
-}
-
-/* Home Page End */
-
-/* About Page Starts */
-.about-main {
-  background-color: #101010;
-}
-.about-section-1 {
-  color: #dfdfdf;
-}
-.about-section-1 h1 {
-  margin-bottom: 1rem;
-}
-.journalists {
-  color: #dfdfdf;
-}
-
-.card {
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #dfdfdf;
-  color: #101010;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.card-title {
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.pfp {
-  width: 125px;
-  height: 125px;
-  border-radius: 50%;
-  padding: 5px;
-  margin-bottom: 20px;
-  object-fit: cover;
-}
-.card-desc {
-  margin: 1rem;
-}
-.card {
-  margin: 10px 10px;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-/* Flip Cards CSS */
-.card-container {
-  display: grid;
-  perspective: 700px;
-}
-
-.card-flip {
-  display: grid;
-  grid-template: 1fr / 1fr;
-  grid-template-areas: "frontAndBack";
-  transform-style: preserve-3d;
-  transition: all 0.7s ease;
-}
-
-.card-flip div {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-}
-
-.front {
-  grid-area: frontAndBack;
-}
-.front h4 {
-  text-decoration: underline #8b0000;
-}
-.back {
-  grid-area: frontAndBack;
-  transform: rotateY(-180deg);
-}
-
-input[type="checkbox"]:checked + .card-container .card-flip {
-  transform: rotateY(180deg);
-}
-
-@media only screen and (min-device-width: 320px) {
-  .about-section-1 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-  .about-section-1 p {
-    text-align: left;
-  }
-  .bios {
-    padding-top: 5rem;
-    background: linear-gradient(-45deg, #8b0000, #570d0f, #1d1d1d, #101010);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  label {
-    margin-bottom: 1.25rem;
-    margin-top: 1.25rem;
-  }
-}
-
-@media only screen and (min-device-width: 768px) {
-  .about-section-1 {
-    height: 100vh;
-  }
-  .about-section-1 p {
-    text-align: center;
-  }
-}
-@media only screen and (min-device-width: 1024px) {
-}
-/* About Page Ends */

@@ -12,6 +12,10 @@
   @include defineColorHSL(--cd-color-1, 0, 0%, 22%); // Mine Shaft
   @include defineColorHSL(--cd-color-2, 74, 93%, 32%); // Highland
   @include defineColorHSL(--cd-color-3, 0, 0%, 97%); // Alabaster
+
+  // font
+  --font-primary: "Fira Sans", sans-serif;
+  --font-secondary: "Playfair Display", serif;
 }
 
 body {
@@ -20,23 +24,23 @@ body {
 }
 
 .js {
-  .timeline {
+  .cd-h-timeline {
     opacity: 0;
     transition: opacity 0.2s;
   }
 
-  .timeline--loaded {
+  .cd-h-timeline--loaded {
     // show the timeline after dates position has been set (using JavaScript)
     opacity: 1;
   }
 
-  .timeline__container {
+  .cd-h-timeline__container {
     position: relative;
     height: 100px;
     max-width: 800px;
   }
 
-  .timeline__dates {
+  .cd-h-timeline__dates {
     position: relative;
     height: 100%;
     margin: 0 40px;
@@ -72,7 +76,7 @@ body {
     }
   }
 
-  .timeline__line {
+  .cd-h-timeline__line {
     // grey line
     position: absolute;
     z-index: 1;
@@ -83,7 +87,7 @@ body {
     transition: transform 0.4s;
   }
 
-  .timeline__filling-line {
+  .cd-h-timeline__filling-line {
     // green filling line
     position: absolute;
     z-index: 1;
@@ -97,7 +101,7 @@ body {
     transition: transform 0.3s;
   }
 
-  .timeline__date {
+  .cd-h-timeline__date {
     position: absolute;
     bottom: 0; // left position will be set using JavaScript
     z-index: 2;
@@ -135,7 +139,7 @@ body {
     }
   }
 
-  .timeline__date--selected {
+  .cd-h-timeline__date--selected {
     pointer-events: none;
 
     &::after {
@@ -144,11 +148,11 @@ body {
     }
   }
 
-  .timeline__date--older-event::after {
+  .cd-h-timeline__date--older-event::after {
     border-color: var(--cd-color-2);
   }
 
-  .timeline__navigation {
+  .cd-h-timeline__navigation {
     // arrows to navigate the timeline
     position: absolute;
     z-index: 1;
@@ -179,16 +183,16 @@ body {
     }
   }
 
-  .timeline__navigation--prev {
+  .cd-h-timeline__navigation--prev {
     left: 0;
     transform: translateY(-50%) rotate(180deg);
   }
 
-  .timeline__navigation--next {
+  .cd-h-timeline__navigation--next {
     right: 0;
   }
 
-  .timeline__navigation--inactive {
+  .cd-h-timeline__navigation--inactive {
     cursor: not-allowed;
 
     &::after {
@@ -200,7 +204,7 @@ body {
     }
   }
 
-  .timeline__events {
+  .cd-h-timeline__events {
     // container of events info
     position: relative;
     width: 100%;
@@ -208,7 +212,7 @@ body {
     transition: height 0.4s;
   }
 
-  .timeline__event {
+  .cd-h-timeline__event {
     // single event info
     position: absolute;
     z-index: 1;
@@ -222,7 +226,7 @@ body {
     animation-timing-function: ease-in-out;
   }
 
-  .timeline__event--selected {
+  .cd-h-timeline__event--selected {
     // selected event info
     position: relative;
     z-index: 2;
@@ -230,35 +234,35 @@ body {
     transform: translateX(0);
   }
 
-  .timeline__event--enter-right,
-  .timeline__event--leave-right {
+  .cd-h-timeline__event--enter-right,
+  .cd-h-timeline__event--leave-right {
     // animate event info
     animation-name: cd-enter-right;
   }
 
-  .timeline__event--enter-left,
-  .timeline__event--leave-left {
+  .cd-h-timeline__event--enter-left,
+  .cd-h-timeline__event--leave-left {
     // animate event info
     animation-name: cd-enter-left;
   }
 
-  .timeline__event--leave-right,
-  .timeline__event--leave-left {
+  .cd-h-timeline__event--leave-right,
+  .cd-h-timeline__event--leave-left {
     animation-direction: reverse;
   }
 
-  .timeline__event-content {
+  .cd-h-timeline__event-content {
     max-width: 800px;
   }
 
-  .timeline__event-title {
+  .cd-h-timeline__event-title {
     color: var(--cd-color-1);
     font-family: var(--font-secondary);
     font-weight: 700;
     font-size: var(--text-xxxl);
   }
 
-  .timeline__event-date {
+  .cd-h-timeline__event-date {
     display: block;
     font-style: italic;
     margin: var(--space-xs) auto;
@@ -293,8 +297,8 @@ body {
   }
 }
 
-html:not(.js) .timeline__dates,
-html:not(.js) .timeline__navigation {
+html:not(.js) .cd-h-timeline__dates,
+html:not(.js) .cd-h-timeline__navigation {
   // hide timeline dates if js is disabled
   display: none;
 }
