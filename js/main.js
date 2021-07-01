@@ -1,6 +1,6 @@
-function openNav() {
-  document.getElementById("mySidenav").style.display = "block";
-}
+// function openNav() {
+//   document.getElementById("mySidenav").style.display = "block";
+// }
 
 function closeNav() {
   document.getElementById("mySidenav").style.display = "none";
@@ -18,6 +18,11 @@ $(function () {
     fitVideo();
   });
   $(window).trigger("resize");
+
+  $navMenu = $("#navMenu");
+  $navMenu.on("click", function () {
+    this.style.display = "block";
+  });
 });
 
 function fitVideo() {
