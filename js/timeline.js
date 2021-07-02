@@ -1,4 +1,4 @@
-  // Horizontal Timeline - by CodyHouse.co
+// Horizontal Timeline - by CodyHouse.co
 var HorizontalTimeline = function (element) {
   this.element = element;
   this.datesContainer =
@@ -13,13 +13,10 @@ var HorizontalTimeline = function (element) {
   )[0];
   this.dateValues = parseDate(this);
   this.minLapse = calcMinLapse(this);
-  this.navigation = this.element.getElementsByClassName(
-    "timeline__navigation"
-  );
+  this.navigation = this.element.getElementsByClassName("timeline__navigation");
   this.contentWrapper =
     this.element.getElementsByClassName("timeline__events")[0];
-  this.content =
-    this.contentWrapper.getElementsByClassName("timeline__event");
+  this.content = this.contentWrapper.getElementsByClassName("timeline__event");
 
   this.eventsMinDistance = 60; // min distance between two consecutive events (in px)
   this.eventsMaxDistance = 200; // max distance between two consecutive events (in px)
@@ -140,7 +137,7 @@ function translateTimeline(timeline, direction) {
 }
 
 function selectNewDate(timeline, target) {
-  // ned date has been selected -> update timeline
+  // new date has been selected -> update timeline
   timeline.newDateIndex = Util.getIndexInArray(timeline.date, target);
   timeline.oldDateIndex = Util.getIndexInArray(
     timeline.date,
@@ -156,7 +153,6 @@ function selectNewDate(timeline, target) {
   updateVisibleContent(timeline);
   updateFilling(timeline);
 }
-
 function updateOlderEvents(timeline) {
   // update older events style
   for (var i = 0; i < timeline.date.length; i++) {
@@ -173,8 +169,7 @@ function updateVisibleContent(timeline) {
         "timeline__event--selected timeline__event--enter-right",
       classLeaving = "timeline__event--leave-left";
   } else if (timeline.newDateIndex < timeline.oldDateIndex) {
-    var classEntering =
-        "timeline__event--selected timeline__event--enter-left",
+    var classEntering = "timeline__event--selected timeline__event--enter-left",
       classLeaving = "timeline__event--leave-right";
   } else {
     var classEntering = "timeline__event--selected",
@@ -209,9 +204,7 @@ function resetAnimation(timeline) {
 function keyNavigateTimeline(timeline, direction) {
   // navigate the timeline using the keyboard
   var newIndex =
-    direction == "next"
-      ? timeline.newDateIndex + 1
-      : timeline.newDateIndex - 1;
+    direction == "next" ? timeline.newDateIndex + 1 : timeline.newDateIndex - 1;
   if (newIndex < 0 || newIndex >= timeline.date.length) return;
   selectNewDate(timeline, timeline.date[newIndex]);
   resetTimelinePosition(timeline, direction);
@@ -224,8 +217,7 @@ function resetTimelinePosition(timeline, direction) {
     timelineWidth = timeline.datesContainer.offsetWidth;
 
   if (
-    (direction == "next" &&
-      eventLeft >= timelineWidth - timeline.translate) ||
+    (direction == "next" && eventLeft >= timelineWidth - timeline.translate) ||
     (direction == "prev" && eventLeft <= -timeline.translate)
   ) {
     timeline.translate = timelineWidth / 2 - eventLeft;
@@ -269,10 +261,7 @@ function calcMinLapse(timeline) {
   // determine the minimum distance among events
   var dateDistances = [];
   for (var i = 1; i < timeline.dateValues.length; i++) {
-    var distance = daydiff(
-      timeline.dateValues[i - 1],
-      timeline.dateValues[i]
-    );
+    var distance = daydiff(timeline.dateValues[i - 1], timeline.dateValues[i]);
     if (distance > 0) dateDistances.push(distance);
   }
 

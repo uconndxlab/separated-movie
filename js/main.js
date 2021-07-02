@@ -1,3 +1,24 @@
+/* function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+} */
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+$(document).ready(function () {
+  console.log("document is ready");
+  $('[data-toggle="offcanvas"], #navToggle').on("click", function () {
+    $(".offcanvas-collapse").toggleClass("open");
+  });
+});
+window.onload = function () {
+  console.log("window is loaded");
+};
+
 var min_w = 300;
 var vid_w_orig;
 var vid_h_orig;
@@ -10,6 +31,11 @@ $(function () {
     fitVideo();
   });
   $(window).trigger("resize");
+
+  /*   $navMenu = $("#navMenu");
+  $navMenu.on("click", function () {
+    this.style.display = "block";
+  }); */
 });
 
 function fitVideo() {
