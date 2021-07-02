@@ -307,7 +307,7 @@ a:hover {
 }
 
 /* Global CSS Start */
-.sidenav {
+/* .sidenav {
   display: none;
   height: 100%;
   width: 250px;
@@ -375,7 +375,113 @@ a:hover {
   .sidenav a {
     font-size: 18px;
   }
+} */
+.navbar-toggler {
+  z-index: 10;
+  background-color: #dfdfdf;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+.navbar-toggler:focus {
+  outline: none;
+}
+.nav-btn-container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #8b0000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.offcanvas-collapse {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: -250px;
+  width: 250px;
+  padding-top: 4rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: #101010;
+  border-right: 1px solid #dfdfdf;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: left, visibility;
+}
+
+.offcanvas-collapse {
+  align-items: start;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.offcanvas-collapse.open {
+  left: 0;
+  visibility: visible;
+}
+
+.navbar-expand-lg .navbar-nav {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: #dfdfdf;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.nav-item:hover {
+  color: #dfdfdf;
+  background-color: #8b0000;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
 footer {
   background-color: #101010;
 }
