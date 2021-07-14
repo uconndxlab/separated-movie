@@ -60,3 +60,6 @@ function fitVideo() {
     ($("video").height() - $(".fullsize-video-bg").height()) / 2
   );
 }
+$("#myModal").on("shown.bs.modal", function () {
+  $("#myInput").trigger("focus");
+});

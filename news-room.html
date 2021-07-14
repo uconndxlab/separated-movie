@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>News Room</title>
+    <meta name="textription" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-offcanvas">
+      <button class="navbar-toggler d-block" type="button" id="navToggle">
+        <div class="nav-btn-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <div class="navbar-collapse offcanvas-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news-room.html">Newsroom</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="news-header">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-12 text-center">
+            <h1 class="display-4">Newsroom</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="news-main">
+      <section class="news-section-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-left">
+              <h2>Top Stories</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="news-card">
+                <img
+                  src="img/carousel/family.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="news-card-body">
+                  <h5 class="news-card-title">Cathleen Caron</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Patrick Linehan</h6>
+                  <p class="card-text">
+                    Around 1,000 parents were separated from their children and
+                    then deported without their children, making reunification
+                    an extremely difficult task.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn ts-btn"
+                    data-toggle="modal"
+                    data-target="#cathleenCaron"
+                  >
+                    Read Article
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="news-card">
+                <img
+                  src="img/carousel/kids.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="news-card-body">
+                  <h5 class="news-card-title">Lee Gelernt</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Patrick Linehan</h6>
+                  <p class="card-text">
+                    The top lawyer in the ACLU’s case against Trump’s family
+                    separation policy says that the prior adminstration
+                    perpetrated child abuse against more than 5,500 children.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn ts-btn"
+                    data-toggle="modal"
+                    data-target="#leeGelernt"
+                  >
+                    Read Article
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="news-card">
+                <img
+                  src="img/carousel/kids.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="news-card-body">
+                  <h5 class="news-card-title">Lee Gelernt</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Patrick Linehan</h6>
+                  <p class="card-text">
+                    The top lawyer in the ACLU’s case against Trump’s family
+                    separation policy says that the prior adminstration
+                    perpetrated child abuse against more than 5,500 children.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn ts-btn"
+                    data-toggle="modal"
+                    data-target="#leeGelernt"
+                  >
+                    Read Article
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Content</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="article-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="img/carousel/family.jpg"
+                    class="card-img article-card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="article-card-body card-body">
+                    <h5 class="card-title text-left">Cathleen Caron</h5>
+                    <h6 class="text-muted">Patrick Linehan</h6>
+                    <p class="card-text">
+                      Around 1,000 parents were separated from their children
+                      and then deported without their children, making
+                      reunification an extremely difficult task.
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn news-btn"
+                      data-toggle="modal"
+                      data-target="#cathleenCaron"
+                    >
+                      Read Article
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="article-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="img/carousel/kids.png"
+                    class="card-img article-card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="article-card-body card-body">
+                    <h5 class="card-title text-left">Lee Gelernt</h5>
+                    <h6 class="text-muted">Patrick Linehan</h6>
+                    <p class="card-text">
+                      The top lawyer in the ACLU’s case against Trump’s family
+                      separation policy says that the prior adminstration
+                      perpetrated child abuse against more than 5,500 children.
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn news-btn"
+                      data-toggle="modal"
+                      data-target="#leeGelernt"
+                    >
+                      Read Article
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="cathleenCaron"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="cathleenCaronLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div>
+                  <h4 class="modal-title" id="cathleenCaronLabel">
+                    Meet the people reuniting immigrant families separated under
+                    Trump
+                  </h4>
+                  <h5 class="modal-dek">
+                    Around 1,000 parents were separated from their children and
+                    then deported without their children, making reunification
+                    an extremely difficult task.
+                  </h5>
+                  <h6 class="modal-author text-muted">By Patrick Linehan</h6>
+                </div>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="lead">
+                  Across Central America a network of civil rights lawyers are
+                  searching tirelessly for hundreds of parents who were deported
+                  after being separated from their children under Trump’s zero
+                  tolerance policy.
+                  <br />
+                  Three years after the family separation policy officially
+                  ended, they continue to knock on doors, track down relatives,
+                  and search incomplete government records to locate the parents
+                  of around 490 children who remain in the United States. They
+                  have already found around 500 children’s parents.
+                  <br />
+                  “Our goal is to make sure that the parents who were deported
+                  without their kids are found, are talked to, are heard, and
+                  gain control over the future of their families,” said Cathleen
+                  Caron, the founder and executive director of
+                  <a href="https://www.justiceinmotion.org/"
+                    >Justice in Motion</a
+                  >, one of the the U.S.-based nonprofits tasked with finding
+                  the deported parents.
+                  <br />
+                  In June 2018 after nearly 5,500 children were separated from
+                  their parents at the border, a federal judge in San Diego
+                  mandated that the government reunify families within 30 days.
+                  Federal agencies failed to meet that deadline.
+                  <br />
+                  “The government intentionally separated these families,
+                  intentionally hurt these families and had no intention to
+                  reunite them,” said Caron. “They weren’t going to do it.”
+                  <br />
+                  So in August 2018, the judge created a steering committee of
+                  five nonprofits to find and reunify families and ordered the
+                  government to turn over any information they had on the
+                  children and parents. Justice in Motion is the member of that
+                  committee that deals with the “unreachable” parents, ones who
+                  have been impossible to reach from the U.S.. Contact
+                  information for these parents is often incomplete, outdated,
+                  or inaccurate, said Caron. Finding them in their country of
+                  origin is complicated.
+                  <br />
+                  “This has been a herculean task that we have been working on
+                  since the Summer of 2018,” said Caron.
+                  <br />
+                  Prior to 2018, Justice in Motion already had what they call a
+                  defender network of 45 human rights organizations and lawyers
+                  South of the border, ensuring immigrants rights were protected
+                  throughout their immigration process. This network was then
+                  ideal for locating parents who had been separated from their
+                  children and deported back to their country of origin.
+                  <br />
+                  “It’s a miracle that we give defender network members bad
+                  data, and they end up finding the families,” said Caron. “So
+                  that’s sleuthing work that they do using local government
+                  records, looking for birth certificates, looking for
+                  hometowns, going to those hometowns. It’s quite complex.”
+                  <br />
+                  Even when the parents are located, there is often a deep
+                  distrust, said Caron. Many parents are slow to trust a system
+                  that tore their child away from them or do not understand the
+                  role Justice in Motion plays in their reunification. That’s
+                  when the local defenders are so crucial.
+                  <br />
+                  “These are people from their own communities who they know are
+                  human rights advocates, human rights leaders,” said Caron.
+                  <br />
+                  Challenges such as COVID-19 and natural disasters have further
+                  complicated an already difficult search, but the defender
+                  network overcame these and other challenges.
+                  <br />
+                  “We are the last resort to find these parents,” said Caron.
+                  “We are going to keep on going through the list. We have found
+                  hundreds of parents so far. The list right now is down to a
+                  couple hundred, and we are making progress.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="leeGelernt"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="leeGelerntLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div>
+                  <h4 class="modal-title" id="leeGelerntLabel">
+                    The ACLU wants reparations for the 5,500 children separated
+                    under Trump
+                  </h4>
+                  <h5 class="modal-dek">
+                    The top lawyer in the ACLU’s case against Trump’s family
+                    separation policy says that the prior adminstration
+                    perpetrated child abuse against more than 5,500 children.
+                  </h5>
+                  <h6 class="text-muted">By Patrick Linehan</h6>
+                </div>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="lead">
+                  An 18-month-old craned her neck to catch the last glimpse of
+                  their wailing mother as the car drove away. A boy screamed
+                  “Daddy, Daddy, what are they doing?” as border patrol agents
+                  forced them apart without time for the child to receive an
+                  answer. Parents waved through a glass window as their children
+                  were taken away, having no idea when they would see them
+                  again.
+                  <br />
+                  These are the stories that Lee Gelernt, deputy director of the
+                  American Civil Liberties Union Immigrants’ Rights Project, has
+                  heard repeated from hundreds of immigrants separated from
+                  their children under the Trump administration’s zero tolerance
+                  immigration policy.
+                  <br />
+                  “This is the worst thing I have seen in my 30 years doing this
+                  civil rights work,” said Gelernt in an interview with
+                  Frontline.
+                  <br />
+                  Gelernt says that more than 5,500 immigrant children were
+                  separated from their parents after crossing the border during
+                  Trump’s tenure, a markedly different approach from previous
+                  administrations who kept the majority of immigrant families
+                  together. A
+                  <a
+                    href="https://www.dhs.gov/sites/default/files/publications/21_0602_s1_family-reunification-task-force-120-day-progress-report.pdf"
+                    >June report</a
+                  >
+                  from The U.S. Department of Homeland Security said that almost
+                  4,000 children were separated from their parents under Trump,
+                  and that the department is reviewing another 1,700 separation
+                  cases. The vast majority of the separated families emigrated
+                  from Central America, per the report.
+                  <br />
+                  “The numbers tell one story, and it’s devastating, the 5,500,”
+                  said Gelernt. “But each child is a story unto himself or
+                  herself.”
+                  <br />
+                  Gelernt is the lead attorney in Ms. L v. U.S. Immigration and
+                  Customs Enforcement, which was filed in February 2018. This
+                  was the first lawsuit to challenge family separation under
+                  Trump, and it came two months before Jeff Sessions sent a
+                  <a
+                    href="https://www.justice.gov/opa/press-release/file/1049751/download"
+                    >memo</a
+                  >
+                  enacting a zero tolerance and family separation policy for
+                  anyone who crosses the border. In the months that followed
+                  that memo, family separations skyrocketed, per the DHS report.
+                  <br />
+                  Ms. L was separated from her daughter, S.S. in November 2017
+                  after arriving in San Diego seeking asylum from the Democratic
+                  Republic of the Congo. Despite entering the country legally as
+                  an asylum seeker, Ms. L was kept in San Diego while her
+                  daughter was brought halfway across the country to Chicago,
+                  where she remained for six months with limited telephone
+                  contact.
+                  <br />
+                  Ms. L was one of what would become 5,500 cases of family
+                  separation. After an international outcry condemning the
+                  practice, Gelerent successfully argued in June 2018 for the
+                  federal court to mandate the end of family separation and
+                  ensure family reunification within 30 days.
+                  <br />
+                  The Trump administration had kept haphazard and incomplete
+                  records on families who had been separated and lacked any plan
+                  to reunite families, said Gelernt. By the deadline, less than
+                  half of the children had been reunified with their parents.
+                  <br />
+                  Today the parents of almost 500 separated children are still
+                  missing, said Gelernt. The ACLU has been working with other
+                  nonprofits to locate parents, most of whom were deported
+                  without their children.
+                  <br />
+                  Even the children who have been reunified suffer from intense
+                  emotional trauma, said Gelernt. A study published in the
+                  Official Journal of the American Academy of Pediatrics called
+                  the practice “torture.”
+                  <br />
+                  “In the history books it needs to say flat out that the Trump
+                  administration engaged in child abuse of thousands and
+                  thousands of children,” said Gelernt.
+                  <br />
+                  Gelernt and his team continue to litigate the Ms. L case,
+                  arguing that families who were separated should be granted
+                  permanent status in the U.S., receive basic necessities, and
+                  get the trauma help they need.
+                  <br />
+                  “Will the children ever recover from what’s happened?” said
+                  Gelernt. “I suspect a lot of them will not, I think that is
+                  what the medical community is saying. But we need to try. We
+                  need to do everything we can.”
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
