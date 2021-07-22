@@ -26,9 +26,12 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
     <script>
       document.getElementsByTagName("html")[0].className += " js";
     </script>
@@ -39,20 +42,36 @@
   </head>
 
   <body>
-    <!-- <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"
-        >&times;</a
-      >
-      <a href="index.html" class="fa-home">Home</a>
-      <a href="about.html" class="fa-user">About</a>
-    </div>
-    <span
-      class="nav-btn"
-      style="font-size: 30px; cursor: pointer"
-      onClick="openNav()"
-      >&#9776;</span
-    > -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-offcanvas">
+    <nav
+      class="navbar navbar-expand-sm sticky-top navbar-dark"
+      style="background-color: #000"
+    >
+      <div class="container ml-0">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar1"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news-room.html">Newsroom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-offcanvas">
       <button class="navbar-toggler d-block" type="button" id="navToggle">
         <div class="nav-btn-container" onclick="myFunction(this)">
           <div class="bar1"></div>
@@ -68,9 +87,12 @@
               <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news-room.html">Newsroom</a>
+            </li>
           </ul>
       </div>
-  </nav>
+  </nav> -->
     <header>
       <section>
         <div class="video-background-holder">
@@ -88,13 +110,33 @@
               <div class="w-100 text-white">
                 <h1 class="display-4">Trumping Zero Tolerance</h1>
                 <p class="lead mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quae accusamus dignissimos possimus pariatur ullam libero debitis laudantium cupiditate voluptate.
+                  The Trump administration began separating migrant families
+                  that arrived at the Mexico-U.S.A border in 2017, creating a
+                  border crisis with families still separated to this day. A
+                  team of researchers, videographers, journalists, and web
+                  designers at the
+                  <a
+                    class="home-header-links"
+                    href="https://dxgroup.core.uconn.edu/"
+                    >University of Connecticut</a
+                  >,
+                  <a
+                    class="home-header-links"
+                    href="https://dxgroup.core.uconn.edu/"
+                    >Syracuse University</a
+                  >, and
+                  <a
+                    class="home-header-links"
+                    href="https://dxgroup.core.uconn.edu/"
+                    >PBS's FRONTLINE</a
+                  >
+                  chronicled the administration's policy and its repercussions.
                 </p>
-                <div class="header-imgs">
-                  <img src="img/logos/uconn-white.svg" alt="UConn Logo" id="uconn-logo">
+                <!-- <div class="header-imgs">
+                  <img src="img/logos/uconn-white.png" alt="UConn Logo" id="uconn-logo">
                   <img src="img/logos/frontline-logo.png" alt="Frontline Logo" id="frontline-logo">
                   <img src="img/logos/syracuse-logo-white.png" alt="Syracuse Logo" id="syracuse-logo">
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -106,7 +148,7 @@
         <div class="container">
           <div class="row">
             <div class="none">
-              <h2>Synopsis</h2>
+              <h2>The Film</h2>
               <p>
                 It was the most shocking part of the Trump administration’s
                 "zero tolerance” approach to immigration: family separation.
@@ -118,18 +160,20 @@
                 takes over, they face an urgent challenge: how to reunite the
                 hundreds of migrant children who remain separated from their
                 families to this day. Drawing on his years of work within
-                immigrant communities, filmmaker Oscar Guerra (<a href="https://www.pbs.org/wgbh/frontline/film/love-life-the-virus/">Love, Life & the
-                Virus</a>) chronicles the struggle. With unique access to the
-                families themselves, Guerra tells the story through their eyes,
-                stripping away the politics and noise to create an intimate
-                portrait of the parents who’d sought safety and opportunity in
-                the U.S., only to have their families torn apart.
+                immigrant communities, filmmaker Oscar Guerra (<a
+                  href="https://www.pbs.org/wgbh/frontline/film/love-life-the-virus/"
+                  >Love, Life & the Virus</a
+                >) chronicles the struggle. With unique access to the families
+                themselves, Guerra tells the story through their eyes, stripping
+                away the politics and noise to create an intimate portrait of
+                the parents who’d sought safety and opportunity in the U.S.,
+                only to have their families torn apart.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="tl-intro">
+      <!-- <section class="tl-intro">
         <div class="container">
           <div class="row">
             <div>
@@ -142,14 +186,14 @@
                   to reunite the hundreds of migrant children who remain
                   separated from their families.
                 </p>
-                <!-- <div class="button_cont" align="center">
+                 <div class="button_cont" align="center">
                   <a class="header-btn" href="#timeline">Follow The Timeline</a>
-                </div> -->
+                </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="timeline" class="timeline js-timeline">
+      </section> -->
+      <!-- <section id="timeline" class="timeline js-timeline">
         <div class="timeline-head">
           <h1>Zero Tolerance Timeline</h1>
         </div>
@@ -165,117 +209,117 @@
                     href="#0"
                     data-date="11/04/2017"
                     class="timeline__date timeline__date--selected"
-                    >11 April</a
+                    >11 April '17</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="01/07/2017"
-                    >July</a
+                    >July '17</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="05/11/2017"
-                    >05 Nov</a
+                    >05 Nov '17</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="06/04/2018"
-                    >06 April</a
+                    >06 April '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="07/05/2018"
-                    >07 May</a
+                    >07 May '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="13/06/2018"
-                    >13 June</a
+                    >13 June '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="18/06/2018"
-                    >18 June</a
+                    >18 June '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="20/06/2018"
-                    >20 June</a
+                    >20 June '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="26/06/2018"
-                    >26 June</a
+                    >26 June '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="12/07/2018"
-                    >12 July</a
+                    >12 July '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="08/12/2018"
-                    >08 Dec</a
+                    >08 Dec '18</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="22/06/2019"
-                    >22 June</a
+                    >22 June '19</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="01/10/2019"
-                    >October</a
+                    >October '19</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="06/11/2019"
-                    >06 Nov</a
+                    >06 Nov '19</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="26/11/2019"
-                    >November</a
+                    >November '19</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="20/10/2020"
-                    >20 Oct</a
+                    >20 Oct '20</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="23/10/2020"
-                    >23 Oct</a
+                    >23 Oct '20</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="27/10/2020"
-                    >27 Oct</a
+                    >27 Oct '20</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="29/10/2020"
-                    >29 Oct</a
+                    >29 Oct '20</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="09/11/2020"
-                    >09 Nov</a
+                    >09 Nov '20</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="07/12/2020"
-                    >07 Dec</a
+                    >07 Dec '20</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="14/01/2021"
-                    >14 Jan</a
+                    >14 Jan '21</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="26/01/2021"
-                    >26 Jan</a
+                    >26 Jan '21</a
                   >
                 </li>
                 <li>
@@ -285,43 +329,43 @@
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="24/02/2021"
-                    >24 Feb</a
+                    >24 Feb '21</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="01/03/2021"
-                    >01 Mar</a
+                    >01 Mar '21</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="03/03/2021"
-                    >03 Mar</a
+                    >03 Mar '21</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="07/04/2021"
-                    >07 April</a
+                    >07 April '21</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="03/05/2021"
-                    >03 May</a
+                    >03 May '21</a
                   >
                 </li>
                 <li>
                   <a href="#0" class="timeline__date" data-date="19/05/2021"
-                    >19 May</a
+                    >19 May </a
                   >
                 </li>
               </ol>
     
               <span class="timeline__filling-line" aria-hidden="true"></span>
-            </div>
-            <!-- .timeline__line -->
-          </div>
-          <!-- .timeline__dates -->
-    
-          <ul>
+            </div> -->
+      <!-- .timeline__line -->
+      <!--  </div> -->
+      <!-- .timeline__dates -->
+
+      <!--   <ul>
             <li>
               <a
                 href="#0"
@@ -345,10 +389,10 @@
               >
             </li>
           </ul>
-        </div>
-        <!-- .timeline__container -->
-    
-        <div class="timeline__events">
+        </div> -->
+      <!-- .timeline__container -->
+
+      <!-- <div class="timeline__events">
           <ol>
             <li class="timeline__event timeline__event--selected text-component">
               <div class="timeline__event-content container">
@@ -933,12 +977,11 @@
               </div>
             </li>
           </ol>
-        </div>
-        <!-- .timeline__events -->
-      </section>
+        </div> -->
+      <!-- .timeline__events -->
+      <!--  </section> -->
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
 
     <script src="js/util.js"></script>
     <!-- util functions included in the CodyHouse framework -->

@@ -307,81 +307,15 @@ a:hover {
 }
 
 /* Global CSS Start */
-/* .sidenav {
-  display: none;
-  height: 100%;
-  width: 250px;
-  position: fixed;
+/* .navbar-toggler {
   z-index: 10;
-  top: 0;
-  left: 0;
-  background-color: #101010;
-  overflow-x: hidden;
-  padding-top: 60px;
-  border-right: 1px solid #dfdfdf;
-}
-.nav-btn {
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  padding: 5px;
-  margin: 1.25rem;
-  border-radius: 5px;
-  color: #8b0000;
-  background-color: #dfdfdf;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #dfdfdf;
-  display: block;
-  font-family: "FontAwesome";
-}
-.fa-home::before {
-  padding-right: 10px;
-}
-.fa-user::before {
-  padding-right: 10px;
-}
-
-.sidenav a:hover {
-  color: #dfdfdf;
-  background-color: #8b0000;
-}
-.sidenav a:visited {
-  border-bottom: #101010;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.sidenav .closebtn:hover {
-  background-color: #10101000;
-  border: #10101000;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-} */
-.navbar-toggler {
-  z-index: 10;
-  background-color: #dfdfdf;
+  background-color: white;
   border: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+} */
+.btn:focus {
+  box-shadow: none !important;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -424,7 +358,7 @@ a:hover {
   overflow-y: auto;
   visibility: hidden;
   background-color: #101010;
-  border-right: 1px solid #dfdfdf;
+  border-right: 1px solid white;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
   transition-property: left, visibility;
@@ -461,19 +395,21 @@ a:hover {
   padding-bottom: 1rem;
   margin-top: -1px;
   overflow-x: auto;
-  color: #dfdfdf;
+  color: white;
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
-
+ul.navbar-nav {
+  width: 100%;
+}
 .nav-underline .nav-link {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
 .nav-item:hover {
-  color: #dfdfdf;
+  color: white;
   background-color: #8b0000;
 }
 
@@ -496,6 +432,13 @@ footer p {
 body {
   background-color: #f8f8f8;
 }
+.home-header-links {
+  color: white;
+  text-decoration: underline 1px;
+}
+.home-header-links:visited {
+  color: #dfdfdf;
+}
 .synopsis-sec {
   padding: 1em;
   padding-top: 5rem;
@@ -504,12 +447,11 @@ body {
 .synopsis-sec h2 {
   margin-bottom: 1rem;
 }
-
-.tl-intro {
+/* .tl-intro {
   background-color: #101010;
 }
 .tl-intro p {
-  color: #dfdfdf;
+  color: white;
   text-align: center;
   padding-top: 5rem;
 }
@@ -520,31 +462,31 @@ body {
 .timeline-head {
   display: flex;
   justify-content: center;
-  color: #dfdfdf;
+  color: white;
   padding-bottom: 2em;
   text-align: center;
 }
 .read-more {
-  border: #dfdfdf 2px solid;
+  border: white 2px solid;
   border-radius: 50px;
   background: none;
-  color: #dfdfdf;
+  color: white;
   font-weight: 300;
   display: flex;
   justify-content: center;
   width: 150px;
-}
+} */
 
 @media only screen and (min-device-width: 320px) {
   body {
-    background-color: #dfdfdf;
+    background-color: white;
   }
 
   .video-background-holder {
     position: relative;
     background-color: #101010;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
   }
 
@@ -560,23 +502,11 @@ body {
     padding-top: 1em;
     padding-bottom: 1em;
   }
-  .header-imgs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-imgs img {
-    width: 90px;
-    height: auto;
-    margin-top: 0;
-    margin: 1rem;
-  }
 }
 
 @media only screen and (min-device-width: 768px) {
   body {
-    background-color: #dfdfdf;
+    background-color: white;
   }
 
   .video-background-holder {
@@ -614,10 +544,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-  #uconn-logo {
-    width: 150px;
-    height: auto;
-  }
 
   .video-background-overlay {
     position: absolute;
@@ -630,76 +556,92 @@ body {
     z-index: 1;
   }
 
-  .header-btn {
+  /* .header-btn {
     transition: all 0.4s ease 0s;
     margin: 0.5rem;
   }
 
   .header-btn:hover {
-    color: #dfdfdf !important;
+    color: white !important;
     text-decoration: none;
     background: #8b0000;
     border-color: #8b0000 !important;
     transition: all 0.4s ease 0s;
-  }
+  } */
 }
 @media only screen and (min-device-width: 1024px) {
-  .header-imgs img {
-    width: 150px;
-    height: auto;
-  }
-  #uconn-logo {
-    width: 170px;
-    height: auto;
-  }
-  #syracuse-logo {
-    width: 120px;
-    height: auto;
-  }
 }
 
 /* Home Page End */
 
 /* About Page Starts */
+.nav-link {
+  font-size: 20px;
+}
 .about-main {
   background-color: #101010;
 }
-.about-section-1 {
-  color: #dfdfdf;
+.about-intro {
+  padding: 2rem;
+  /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px); */
 }
+
 .about-section-1 h1 {
   margin-bottom: 1rem;
 }
-.journalists {
-  color: #dfdfdf;
+.bios {
+  padding-bottom: 5rem;
 }
-
 .card {
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #dfdfdf;
+  background-color: white;
   color: #101010;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.card-block {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 0px;
 }
 .card-title {
   padding: 10px;
   text-align: center;
   margin-bottom: 0;
 }
-
+.card-title-back {
+  padding-top: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.card-subtitle {
+  padding: 5px;
+}
+.card-footer {
+  background-color: white;
+  border: none;
+}
 .pfp {
-  width: 125px;
-  height: 125px;
+  width: 145px;
+  height: 145px;
   border-radius: 50%;
   padding: 5px;
   margin-bottom: 20px;
   object-fit: cover;
 }
-.card-desc {
-  margin: 1rem;
+.card picture {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card-bio {
+  margin-top: 1rem;
+  max-height: 225px;
+  overflow-y: scroll;
 }
 .card {
   margin: 10px 10px;
@@ -731,9 +673,7 @@ input[type="checkbox"] {
 .front {
   grid-area: frontAndBack;
 }
-.front h4 {
-  text-decoration: underline #8b0000;
-}
+
 .back {
   grid-area: frontAndBack;
   transform: rotateY(-180deg);
@@ -751,11 +691,33 @@ input[type="checkbox"]:checked + .card-container .card-flip {
   .about-section-1 p {
     text-align: left;
   }
-  .bios {
+  .about-section-1 {
     padding-top: 5rem;
-    background: linear-gradient(-45deg, #8b0000, #570d0f, #1d1d1d, #101010);
+    background-color: #101010;
+    /* background: linear-gradient(-45deg, #8b0000, #570d0f, #1d1d1d, #101010);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite; */
+  }
+  .header-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #uconn-logo {
+    padding: 5px;
+    width: 150px;
+    height: auto;
+  }
+  #syracuse-logo {
+    padding: 5px;
+    width: 80px;
+    height: auto;
+  }
+  #frontline-logo {
+    padding: 5px;
+    width: 130px;
+    height: auto;
   }
   @keyframes gradient {
     0% {
@@ -781,7 +743,174 @@ input[type="checkbox"]:checked + .card-container .card-flip {
   .about-section-1 p {
     text-align: center;
   }
+  .header-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-device-width: 1024px) {
+  .header-imgs img {
+    width: 150px;
+    height: auto;
+  }
+  #uconn-logo {
+    padding-right: 25px;
+    width: 170px;
+    height: auto;
+  }
+  #syracuse-logo {
+    width: 100px;
+    height: auto;
+  }
+}
+/* About Page Ends */
+
+/* News Room Start */
+
+.news-header h1 {
+  color: white;
+}
+
+.news-section-1 {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.news-btn {
+  background-color: #8b0000;
+  color: white;
+  margin-top: 1rem;
+}
+.tl-intro {
+  background-color: #101010;
+}
+.tl-intro p {
+  color: white;
+  text-align: center;
+}
+.timeline {
+  padding-bottom: 5rem;
+}
+.timeline-head {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-bottom: 2em;
+  text-align: center;
+}
+.read-more {
+  border: white 2px solid;
+  border-radius: 50px;
+  background: none;
+  color: white;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+.stories {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.stories h2 {
+  padding-bottom: 2rem;
+}
+.article-card {
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  background-color: white;
+  color: #101010;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+.article-card img {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  filter: grayscale(100%);
+}
+.article-card-img {
+  height: 100%;
+  width: 0 auto;
+}
+.article-card-body h5 {
+  padding-left: 0px;
+}
+.modal-header {
+  background-color: #101010;
+  color: white;
+}
+.close {
+  color: white;
+}
+.close:hover {
+  color: white;
+}
+.modal-title {
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+.modal-authour {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.modal-footer {
+  background-color: #101010;
+}
+.modal-close-btn {
+  border: 1px solid white;
+  color: white;
+}
+.modal-close-btn:hover {
+  border: 1px solid#8b0000;
+  color: #8b0000;
+  background-color: white;
+}
+@media only screen and (min-device-width: 320px) {
+  .news-header {
+    background-color: #101010;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .news-header h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .timeline-head {
+    padding-top: 5rem;
+  }
+}
+@media only screen and (min-device-width: 768px) {
+  .news-header {
+    height: 50vh;
+    min-height: 100px;
+    background-image: url("../img/crowd-title.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+  }
+  .news-landing-top {
+    height: 50vh;
+  }
+  .tl-intro {
+    height: 50vh;
+  }
+  .timeline-head {
+    padding-top: 0px;
+  }
+  .modal-xl {
+    width: 75%;
+    max-width: 1100px;
+  }
+  .news-header h1 {
+    font-size: 75px;
+    font-weight: bold;
+  }
 }
 @media only screen and (min-device-width: 1024px) {
 }
-/* About Page Ends */
+/* News Room End */
