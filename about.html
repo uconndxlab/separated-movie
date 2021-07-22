@@ -42,21 +42,36 @@
 
   <body>
     <!-- Add your site or application content here -->
-    <!-- <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"
-        >&times;</a
-      >
-      <a href="index.html" class="fa-home">Home</a>
-      <a href="about.html" class="fa-user">About</a>
-    </div>
-    <span
-      id="navMenu"
-      class="nav-btn"
-      style="font-size: 30px; cursor: pointer"
-      onClick="openNav()"
-      >&#9776;</span
-    > -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-offcanvas">
+    <nav
+      class="navbar navbar-expand-sm sticky-top navbar-dark"
+      style="background-color: #000"
+    >
+      <div class="container ml-0">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar1"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news-room.html">Newsroom</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-offcanvas">
       <button class="navbar-toggler d-block" type="button" id="navToggle">
         <div class="nav-btn-container" onclick="myFunction(this)">
           <div class="bar1"></div>
@@ -75,16 +90,16 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="news-room.html">News Room</a>
+            <a class="nav-link" href="news-room.html">Newsroom</a>
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
     <header>
       <section class="about-section-1">
         <div class="container h-100">
           <div class="d-flex h-100 text-center align-items-center">
-            <div class="col w-100 text-white">
+            <div class="col w-100 text-white about-intro">
               <h1 class="display-4">Meet Our Team</h1>
               <p class="lead">
                 This site is a collaborative effort by a group of researchers,
@@ -98,6 +113,23 @@
                 stories of families yet to be reunited three years later. The
                 film will be released Fall 2021.
               </p>
+              <div class="header-imgs">
+                <img
+                  src="img/logos/uconn-white.png"
+                  alt="UConn Logo"
+                  id="uconn-logo"
+                />
+                <img
+                  src="img/logos/frontline-logo.png"
+                  alt="Frontline Logo"
+                  id="frontline-logo"
+                />
+                <img
+                  src="img/logos/syracuse-logo-white.png"
+                  alt="Syracuse Logo"
+                  id="syracuse-logo"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -107,171 +139,66 @@
       <section class="bios">
         <div class="container">
           <div class="row justify-content-center">
-            <!-- Card 1 -->
-            <input type="checkbox" id="card-1" />
-            <label class="col-md-5 col-lg-4 card-container" for="card-1">
+            <!-- Guerra Card -->
+            <input type="checkbox" id="card-5" />
+            <label class="col-md-5 col-lg-4 card-container" for="card-5">
               <div class="card-flip">
-                <!-- Card 1 Front -->
+                <!-- Guerra Card Front -->
                 <div class="card front">
                   <picture
                     ><img
                       class="pfp"
-                      src="img/headshots/PatrickLinehan.jpeg"
-                      alt="Patrick Linehan Headshot"
+                      src="img/headshots/OscarGuerra-headshot.jpeg"
+                      alt="Oscar Guerra Headshot"
                   /></picture>
+
                   <div class="card-block">
-                    <h4 class="card-title text-center">Patrick Linehan</h4>
-                    <h6 class="card-subtitle mb-2 text-muted text-center">
-                      Journalist
+                    <h4 class="card-title text-center">Oscar Guerra</h4>
+                    <h6 class="card-subtitle text-muted text-center">
+                      Director / Producer
                     </h6>
-                    <p class="card-text">
-                      Graduate of the S.I. Newhouse School of Public
-                      Communications where he studied magazine and digital
-                      journalism.
-                    </p>
-                    <p class="card-text">
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
                       <small class="text-muted">Click to read more</small>
                     </p>
                   </div>
                 </div>
-                <!-- End Card 1 Front -->
+                <!-- End Guerra Card Front -->
 
-                <!-- Card 1 Back -->
+                <!-- Guerra Card Back -->
                 <div class="card back">
                   <div class="card-block">
-                    <h4 class="card-title">About Patrick</h4>
-                    <p class="card-text">
-                      Patrick Linehan is a researcher and writer for this site
-                      and a recent graduate of the S.I. Newhouse School of
-                      Public Communications where he studied magazine and
-                      digital journalism. Linehan has won awards for reporting
-                      on juvenile justice, border issues, child welfare, and the
-                      arts. His work has appeared in The Daily Orange, South
-                      Bend Tribune, News21, The Newshouse, and the New York USA
-                      Today Network. In addition to news publications, Linehan
-                      has written and produced videos for the Blackstone
-                      Launchpad and the Shaw Center for Community Engagement at
-                      Syracuse University.
+                    <h4 class="card-title-back">About Oscar</h4>
+                    <p class="card-text card-bio">
+                      Oscar Guerra is a NORCAL Emmy® Award-winning director,
+                      researcher and educator. His career spans the spectrum of
+                      television, music, multimedia production, documentaries
+                      for social change, promotional video and immersive media.
+                      Dr. Guerra graduated with a Ph.D. in Mass Communication
+                      from the University of North Carolina at Chapel Hill and
+                      has a M.S. in Marketing from Tecnologico de Monterrey
+                      University, Mexico City. He is currently a tenure-track
+                      professor at the University of Connecticut in Stamford.
+                      His focus is on storytelling that promotes critical
+                      thinking and social investment. He aims to produce media
+                      that provides a way for underrepresented groups to share
+                      and disseminate counterstories, contradict dominant and
+                      potentially stereotypical narratives, and strengthen their
+                      voices and identities.
                     </p>
                   </div>
                 </div>
-                <!-- End Card 1 Back -->
+                <!-- End Guerra Card Back -->
               </div>
             </label>
-            <!-- End Card 1 -->
+            <!-- End Guerra Card -->
 
-            <!-- Card 2 -->
-            <input type="checkbox" id="card-2" />
-            <label class="col-md-5 col-lg-4 card-container" for="card-2">
-              <div class="card-flip">
-                <!-- Card 2 Front -->
-                <div class="card front">
-                  <picture
-                    ><img
-                      class="pfp"
-                      src="img/headshots/LopezEstheralice.jpg"
-                      alt="Estheralice Lopez Headshot"
-                  /></picture>
-                  <div class="card-block">
-                    <h4 class="card-title text-center">Estheralice Lopez</h4>
-                    <h6 class="card-subtitle mb-2 text-muted text-center">
-                      Production Assistant
-                    </h6>
-                    <p class="card-text">
-                      A rising senior where she anticipates graduating with a
-                      B.A in photography from the S.I Newhouse School of Public
-                      Communication.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Click to read more</small>
-                    </p>
-                  </div>
-                </div>
-                <!-- End Card 2 Front -->
-
-                <!-- Card 2 Back -->
-                <div class="card back">
-                  <div class="card-block">
-                    <h4 class="card-title">About Estheralice</h4>
-                    <p class="card-text">
-                      Estheralice Lopez is a production assistant and translator
-                      for this site. Lopez is a rising senior where she
-                      anticipates graduating with a B.A in photography from the
-                      S.I Newhouse School of Public Communication. She is
-                      recognized as a Posse Scholar at Syracuse, has
-                      participated in the Eddie Adams Workshop XXXIII, and has
-                      worked closely with startup company, CLLCTVE, a platform
-                      by Gen-Z creators for Gen-Z creators. Lopez aims to use
-                      her creative medium to continue to learn and amplify the
-                      voices and stories of those untold or unheard of.
-                    </p>
-                  </div>
-                </div>
-                <!-- End Card 2 Back -->
-              </div>
-            </label>
-            <!-- End Card 2 -->
-
-            <!-- Card 3 -->
-            <input type="checkbox" id="card-3" />
-            <label class="col-md-5 col-lg-4 card-container" for="card-3">
-              <div class="card-flip">
-                <!-- Card 3 Front -->
-                <div class="card front">
-                  <picture
-                    ><img
-                      class="pfp"
-                      src="img/headshots/ColeStrongHeadshot.jpg"
-                      alt="Cole Strong Headshot"
-                  /></picture>
-                  <div class="card-block">
-                    <h4 class="card-title text-center">Cole Strong</h4>
-                    <h6 class="card-subtitle mb-2 text-muted text-center">
-                      Camera Operator
-                    </h6>
-                    <p class="card-text">
-                      A rising senior at Syracuse University where he will
-                      graduate with a B.S. in photojournalism from the S.I.
-                      Newhouse School of Public Communication and a B.A. in
-                      Psychology from The College of Arts and Sciences.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Click to read more</small>
-                    </p>
-                  </div>
-                </div>
-                <!-- End Card 3 Front -->
-
-                <!-- Card 3 Back -->
-                <div class="card back">
-                  <div class="card-block">
-                    <h4 class="card-title">About Cole</h4>
-                    <p class="card-text">
-                      Cole Strong is a researcher and camera operator for this
-                      site. Strong is a rising senior at Syracuse University
-                      where he will graduate with a B.S. in photojournalism from
-                      the S.I. Newhouse School of Public Communication and a
-                      B.A. in Psychology from The College of Arts and Sciences.
-                      He has been published in The Newshouse and has received
-                      first place awards from the White House News Photographers
-                      Association, The Broadcast Education Association’s
-                      Festival of Media Arts, and the Society of Professional
-                      Journalists. Strong’s passion for story keeps him focused
-                      on his ultimate goal: telling the stories of our planet
-                      and its people.
-                    </p>
-                  </div>
-                </div>
-                <!-- End Card 3 Back -->
-              </div>
-            </label>
-            <!-- End Card 3 -->
-
-            <!-- Card 4 -->
+            <!-- Rozas Card -->
             <input type="checkbox" id="card-4" />
             <label class="col-md-5 col-lg-4 card-container" for="card-4">
               <div class="card-flip">
-                <!-- Card 4 Front -->
+                <!-- Rozas Card Front -->
                 <div class="card front">
                   <picture
                     ><img
@@ -281,26 +208,23 @@
                   /></picture>
                   <div class="card-block">
                     <h4 class="card-title text-center">Adriana Rozas Rivera</h4>
-                    <h6 class="card-subtitle mb-2 text-muted text-center">
+                    <h6 class="card-subtitle text-muted text-center">
                       Project Manager
                     </h6>
-                    <p class="card-text">
-                      A Puerto Rican graduate journalism student at Syracuse
-                      University. She is a Newhouse Graduate Minority Newspaper
-                      Fellow and a 2021 Pulitzer Center Reporting Fellow.
-                    </p>
-                    <p class="card-text">
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
                       <small class="text-muted">Click to read more</small>
                     </p>
                   </div>
                 </div>
-                <!-- End Card 4 Front -->
+                <!-- End Rozas Card Front -->
 
-                <!-- Card 4 Back -->
+                <!-- Rozas Card Back -->
                 <div class="card back">
                   <div class="card-block">
-                    <h4 class="card-title">About Adriana</h4>
-                    <p class="card-text">
+                    <h4 class="card-title-back">About Adriana</h4>
+                    <p class="card-text card-bio">
                       Adriana Rozas Rivera is the project manager for this site
                       and a Puerto Rican graduate journalism student at Syracuse
                       University. She is a Newhouse Graduate Minority Newspaper
@@ -318,10 +242,325 @@
                     </p>
                   </div>
                 </div>
-                <!-- End Card 4 Back -->
+                <!-- End Rozas Card Back -->
               </div>
             </label>
-            <!-- End Card 4 -->
+            <!-- End Rozas Card -->
+
+            <!-- Linehan Card -->
+            <input type="checkbox" id="card-1" />
+            <label class="col-md-5 col-lg-4 card-container" for="card-1">
+              <div class="card-flip">
+                <!-- Linehan Card Front -->
+                <div class="card front">
+                  <picture
+                    ><img
+                      class="pfp"
+                      src="img/headshots/PatrickLinehan.jpeg"
+                      alt="Patrick Linehan Headshot"
+                  /></picture>
+                  <div class="card-block">
+                    <h4 class="card-title text-center">Patrick Linehan</h4>
+                    <h6 class="card-subtitle text-muted text-center">
+                      Journalist
+                    </h6>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
+                      <small class="text-muted">Click to read more</small>
+                    </p>
+                  </div>
+                </div>
+                <!-- End Linehan Card Front -->
+
+                <!-- Linehan Card Back -->
+                <div class="card back">
+                  <div class="card-block">
+                    <h4 class="card-title-back">About Patrick</h4>
+                    <p class="card-text card-bio">
+                      Patrick Linehan is a researcher and writer for this site
+                      and a recent graduate of the S.I. Newhouse School of
+                      Public Communications where he studied magazine and
+                      digital journalism. Linehan has won awards for reporting
+                      on juvenile justice, border issues, child welfare, and the
+                      arts. His work has appeared in The Daily Orange, South
+                      Bend Tribune, News21, The Newshouse, and the New York USA
+                      Today Network. In addition to news publications, Linehan
+                      has written and produced videos for the Blackstone
+                      Launchpad and the Shaw Center for Community Engagement at
+                      Syracuse University.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Linehan Card Back -->
+              </div>
+            </label>
+            <!-- End Linehan Card -->
+
+            <!-- Jon Card -->
+            <input type="checkbox" id="card-6" />
+            <label class="col-md-5 col-lg-4 card-container" for="card-6">
+              <div class="card-flip">
+                <!-- Jon Card Front -->
+                <div class="card front">
+                  <picture
+                    ><img
+                      class="pfp"
+                      src="img/headshots/Jon-headshot.jpg"
+                      alt="Jonathan Iturriaga-Dasilva Headshot"
+                  /></picture>
+
+                  <div class="card-block">
+                    <h5 class="card-title text-center">
+                      Jonathan Iturriaga-Dasilva
+                    </h5>
+                    <h6 class="card-subtitle text-muted text-center">
+                      Production Assistant
+                    </h6>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
+                      <small class="text-muted">Click to read more</small>
+                    </p>
+                  </div>
+                </div>
+                <!-- End Jon Card Front -->
+
+                <!-- Jon Card Back -->
+                <div class="card back">
+                  <div class="card-block">
+                    <h4 class="card-title-back">About Jonathan</h4>
+                    <p class="card-text card-bio">
+                      Jonathan Iturriaga-DaSilva is an assistant producer and
+                      camera operator for this site with experience in major
+                      motion pictures and documentaries working alongside Dr.
+                      Guerra. Iturriaga-DaSilva is a current senior at the
+                      University of Connecticut pursuing a B.A. in Digital Media
+                      and Design with a focus on Digital Film and Video
+                      Production. While Iturriaga-DaSilva has been independently
+                      producing digital content for nearly 7 years for various
+                      social media platforms, he recently began pursuing a
+                      career in EPK (Electronic Press Kit) work documenting the
+                      behind-the-scenes content for major motion films such as
+                      The Good Nurse (2022) and Shazam! Fury of the Gods (2023).
+                      Iturriaga-DaSilva continues to pursue a career path that
+                      will help him achieve his dream of directing and producing
+                      his own major motion picture.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Jon Card Back -->
+              </div>
+            </label>
+            <!-- End Jon Card -->
+
+            <!-- Lopez Card -->
+            <input type="checkbox" id="card-2" />
+            <label class="col-md-5 col-lg-4 card-container" for="card-2">
+              <div class="card-flip">
+                <!-- Lopez Card Front -->
+                <div class="card front">
+                  <picture
+                    ><img
+                      class="pfp"
+                      src="img/headshots/LopezEstheralice.jpg"
+                      alt="Estheralice Lopez Headshot"
+                  /></picture>
+                  <div class="card-block">
+                    <h4 class="card-title text-center">Estheralice Lopez</h4>
+                    <h6 class="card-subtitle text-muted text-center">
+                      Photojournalist
+                    </h6>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
+                      <small class="text-muted">Click to read more</small>
+                    </p>
+                  </div>
+                </div>
+                <!-- End Lopez Card Front -->
+
+                <!-- Lopez Card Back -->
+                <div class="card back">
+                  <div class="card-block">
+                    <h4 class="card-title-back">About Estheralice</h4>
+                    <p class="card-text card-bio">
+                      Estheralice Lopez is a production assistant and translator
+                      for this site. Lopez is a rising senior where she
+                      anticipates graduating with a B.A in photography from the
+                      S.I Newhouse School of Public Communication. She is
+                      recognized as a Posse Scholar at Syracuse, has
+                      participated in the Eddie Adams Workshop XXXIII, and has
+                      worked closely with startup company, CLLCTVE, a platform
+                      by Gen-Z creators for Gen-Z creators. Lopez aims to use
+                      her creative medium to continue to learn and amplify the
+                      voices and stories of those untold or unheard of.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Lopez Card Back -->
+              </div>
+            </label>
+            <!-- End Lopez Card -->
+
+            <!-- Salisbury Card -->
+            <input type="checkbox" id="card-7" />
+            <label class="col-md-5 col-lg-4 card-container" for="card-7">
+              <div class="card-flip">
+                <!-- Salisbury Card Front -->
+                <div class="card front">
+                  <picture
+                    ><img
+                      class="pfp"
+                      src="img/headshots/salisbury.jpeg"
+                      alt="Joel Salisbury Headshot"
+                  /></picture>
+                  <div class="card-block">
+                    <h4 class="card-title text-center">Joel Salisbury</h4>
+                    <h6 class="card-subtitle text-muted text-center">
+                      Project Assistant
+                    </h6>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
+                      <small class="text-muted">Click to read more</small>
+                    </p>
+                  </div>
+                </div>
+                <!-- End Salisbury Card Front -->
+
+                <!-- Salisbury Card Back -->
+                <div class="card back">
+                  <div class="card-block">
+                    <h4 class="card-title-back">About Joel</h4>
+                    <p class="card-text card-bio">
+                      A UConn alum and long-time member of the University
+                      community, Salisbury joined the Digital Media & Design
+                      faculty in Fall 2015. His work history includes years as a
+                      web and mobile developer, UX designer, digital strategist,
+                      and digital product manager. <br />
+                      Salisbury’s latest work includes founding leadership roles
+                      in the DMD DX Lab and UConn DX Group. Most recently, his
+                      research interests focus on conservation, natural
+                      resources, and food insecurity. <br />
+                      He has completed freelance web and mobile work for clients
+                      ranging from local companies to global brands such as
+                      Indeed.com, Land Rover North America, NADA Used Car
+                      Guides, PBS MotorWeek and Vera Bradley, Inc. Additionally,
+                      he has served as a member of several technology and
+                      marketing-related advisory groups and councils at UConn,
+                      including the Academic Technology Council, WordPress
+                      (project Aurora) Developer’s Group and Code Audit Team,
+                      Mobile Standards Committee, and the Communications &
+                      Marketing Council. Joel is also a creative partner in a
+                      small digital marketing agency.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Salisbury Card Back -->
+              </div>
+            </label>
+            <!-- End Salisbury Card -->
+
+            <!-- Strong Card -->
+            <input type="checkbox" id="card-3" />
+            <label class="col-md-5 col-lg-4 card-container" for="card-3">
+              <div class="card-flip">
+                <!-- Strong Card Front -->
+                <div class="card front">
+                  <picture
+                    ><img
+                      class="pfp"
+                      src="img/headshots/ColeStrongHeadshot.jpg"
+                      alt="Cole Strong Headshot"
+                  /></picture>
+                  <div class="card-block">
+                    <h4 class="card-title text-center">Cole Strong</h4>
+                    <h6 class="card-subtitle text-muted text-center">
+                      Photojournalist
+                    </h6>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
+                      <small class="text-muted">Click to read more</small>
+                    </p>
+                  </div>
+                </div>
+                <!-- End Strong Card Front -->
+
+                <!-- Strong Card Back -->
+                <div class="card back">
+                  <div class="card-block">
+                    <h4 class="card-title-back">About Cole</h4>
+                    <p class="card-text card-bio">
+                      Cole Strong is a researcher and camera operator for this
+                      site. Strong is a rising senior at Syracuse University
+                      where he will graduate with a B.S. in photojournalism from
+                      the S.I. Newhouse School of Public Communication and a
+                      B.A. in Psychology from The College of Arts and Sciences.
+                      He has been published in The Newshouse and has received
+                      first place awards from the White House News Photographers
+                      Association, The Broadcast Education Association’s
+                      Festival of Media Arts, and the Society of Professional
+                      Journalists. Strong’s passion for story keeps him focused
+                      on his ultimate goal: telling the stories of our planet
+                      and its people.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Strong Card Back -->
+              </div>
+            </label>
+            <!-- End Strong Card -->
+
+            <!-- Daley Card -->
+            <input type="checkbox" id="card-8" />
+            <label class="col-md-5 col-lg-4 card-container" for="card-8">
+              <div class="card-flip">
+                <!-- Daley Card Front -->
+                <div class="card front">
+                  <picture
+                    ><img
+                      class="pfp"
+                      src="img/headshots/daley.jpeg"
+                      alt="Joel Salisbury Headshot"
+                  /></picture>
+                  <div class="card-block">
+                    <h4 class="card-title text-center">Brian Daley</h4>
+                    <h6 class="card-subtitle text-muted text-center">
+                      Project Assistant
+                    </h6>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text text-center">
+                      <small class="text-muted">Click to read more</small>
+                    </p>
+                  </div>
+                </div>
+                <!-- End Daley Card Front -->
+
+                <!-- Daley Card Back -->
+                <div class="card back">
+                  <div class="card-block">
+                    <h4 class="card-title-back">About Brian</h4>
+                    <p class="card-text card-bio">
+                      Brian Daley joined the Digital Media & Design program in
+                      Fall 2017. Prior to becoming a full-time faculty member,
+                      Brian served as an adjunct lecturer for several years in
+                      the Web Design & Development concentration. For nearly 20
+                      years, Brian has been creating for web and mobile
+                      platforms as a freelancer and a web developer with
+                      University Communications at the University of
+                      Connecticut. His work includes projects like the UConn
+                      homepage and UConn Health, as well as many other
+                      high-profile digital marketing campaigns and websites.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Daley Card Back -->
+              </div>
+            </label>
+            <!-- End Daley Card -->
           </div>
         </div>
       </section>
