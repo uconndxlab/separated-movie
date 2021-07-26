@@ -685,18 +685,13 @@ input[type="checkbox"]:checked + .card-container .card-flip {
 
 @media only screen and (min-device-width: 320px) {
   .about-section-1 {
-    padding-top: 5rem;
     padding-bottom: 5rem;
   }
   .about-section-1 p {
     text-align: left;
   }
   .about-section-1 {
-    padding-top: 5rem;
     background-color: #101010;
-    /* background: linear-gradient(-45deg, #8b0000, #570d0f, #1d1d1d, #101010);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite; */
   }
   .header-imgs {
     display: flex;
@@ -705,17 +700,16 @@ input[type="checkbox"]:checked + .card-container .card-flip {
     align-items: center;
   }
   #uconn-logo {
-    padding: 5px;
+    margin: 2rem;
     width: 150px;
     height: auto;
   }
   #syracuse-logo {
-    padding: 5px;
-    width: 80px;
+    margin: 2rem;
+    width: 170px;
     height: auto;
   }
   #frontline-logo {
-    padding: 5px;
     width: 130px;
     height: auto;
   }
@@ -756,12 +750,13 @@ input[type="checkbox"]:checked + .card-container .card-flip {
     height: auto;
   }
   #uconn-logo {
-    padding-right: 25px;
+    margin: 2rem;
     width: 170px;
     height: auto;
   }
   #syracuse-logo {
-    width: 100px;
+    margin: 2rem;
+    width: 170px;
     height: auto;
   }
 }
@@ -811,6 +806,7 @@ input[type="checkbox"]:checked + .card-container .card-flip {
   width: 150px;
 }
 .stories {
+  background-color: white;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }

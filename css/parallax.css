@@ -1,0 +1,36 @@
+.parallax-container {
+  height: 100vh;
+}
+.parallax-container img {
+  width: 100%;
+  position: absolute;
+  height: 110vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.main-title {
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -30%);
+}
+
+.content {
+  width: 100%;
+  background: #101010;
+  min-height: 100vh;
+  position: absolute;
+}
+.timeline-intro {
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media only screen and (min-device-width: 1024px) {
+  .main-title {
+    font-size: 6rem;
+  }
+}
