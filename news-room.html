@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>News Room</title>
-    <meta name="textription" content="" />
+    <meta name="description" content="Newsroom Page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta property="og:title" content="" />
@@ -49,13 +49,13 @@
       style="background-color: #000"
     >
       <div class="container ml-0">
-        <a class="navbar-brand" href="#"></a>
+        <!-- <a class="navbar-brand" href="#"></a> -->
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
           data-toggle="collapse"
           data-target="#navbar1"
-        >
+        > <p>Button</p>
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar1">
@@ -75,9 +75,15 @@
     </nav>
     <header class="news-header">
       <div class="container h-100">
-        <div class="row align-items-center h-100">
-          <div class="col-12 text-center">
-            <h1>Newsroom</h1>
+        <div class="news-title row d-flex align-items-center h-100">
+          <div class="m-auto text-center justify-content-center align-self-center">
+            <h1 class="big-title">Newsroom</h1>
+            <h3 class="little-title">Newsroom</h3>
+          </div>
+          <div class="align-self-end mr-0auto">
+            <p>
+              <small class="caption">Migrants at the MEX-USA border in Brownsville, TX.</small>
+            </p>
           </div>
         </div>
       </div>
@@ -85,15 +91,12 @@
     <main class="news-main">
       <section class="tl-intro">
         <div class="container h-100 d-flex">
-          <div class="row align-items-center">
-            <div>
-              <h1 class="timeline-head">Zero Tolerance Timeline</h1>
-              <p class="lead mb-0 text-left">
-                The Trump administration's zero tolerance immigration policy had its discreet start in 2017. Explore our Zero Tolerance Timeline to learn about the actions that led to thousands of family separations and the repercussions felt to this day.
+          <div class="row align-items-center justify-content-center">
+            <div class="col-10">
+              <h2 class="timeline-head display-6">Zero Tolerance Timeline</h2>
+              <p class=" mb-0 text-left">
+                Explore our Zero Tolerance Timeline to learn about the actions that led to thousands of family separations and the repercussions felt to this day.
                 </p>
-                <!-- <div class="button_cont" align="center">
-                  <a class="header-btn" href="#timeline">Follow The Timeline</a>
-                </div> -->
             </div>
           </div>
         </div>
@@ -890,11 +893,16 @@
             <div class="article-card">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img
-                    src="img/article/lee.JPG"
-                    class="card-img article-card-img"
-                    alt="..."
-                  />
+
+                  <picture>
+                    <source
+                        srcset="img/article/lee-sm.JPG,
+                                img/article/lee-med.JPG,
+                                img/article/lee-lg.JPG"
+                        sizes="(min-width: 768px),
+                               (min-width: 1024px)">
+                    <img src="img/article/lee-sm.JPG" alt="Image description" class="card-img article-card-img">
+                </picture>
                 </div>
                 <div class="col-md-8">
                   <div class="article-card-body card-body">
@@ -926,11 +934,15 @@
             <div class="article-card">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                   <img
-                    src="img/article/cathleen.png"
-                    class="card-img article-card-img"
-                    alt="..."
-                  />
+                  <picture>
+                    <source
+                        srcset="img/article/cathleen-sm.png,
+                                img/article/cathleen-med.png,
+                                img/article/cathleen-lg.png"
+                        sizes="(min-width: 768px),
+                               (min-width: 1024px)">
+                    <img src="img/article/cathleen-sm.png" alt="Image description" class="card-img article-card-img">
+                </picture>
                 </div>
                 <div class="col-md-8">
                   <div class="article-card-body card-body">
