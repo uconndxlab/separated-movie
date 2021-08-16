@@ -307,15 +307,12 @@ a:hover {
 }
 
 /* Global CSS Start */
-/* .navbar-toggler {
-  z-index: 10;
-  background-color: white;
-  border: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-} */
 .btn:focus {
   box-shadow: none !important;
+}
+.navbar-toggler p {
+  font-size: 0.25px;
+  color: #000;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -425,7 +422,9 @@ footer {
 footer p {
   margin: 0 auto;
 }
-
+.caption {
+  color: white;
+}
 /* Global CSS End */
 
 /* Home Page Start */
@@ -560,75 +559,12 @@ body {
 .carousel-control-prev-icon {
   fill: #8b0000;
 }
-/* .storrs {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: -5;
+.carousel-control-prev-icon {
+  filter: brightness(0.5) sepia(1) saturate(10000%);
 }
-.slide-1 {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background: url("../img/carousel/uconn-storrs.jpeg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
+.carousel-control-next {
+  filter: brightness(0.5) sepia(1) saturate(10000%);
 }
-.slide-2 {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background: url("../img/carousel/newhouse.jpeg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
-}
-.slide-3 {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background: url("../img/carousel/uconn-stamford.jpeg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
-}
-#carouselExampleIndicators .carousel-inner .carousel-item .background-carousel {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#carouselExampleIndicators .carousel-inner .carousel-item .info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: auto;
-  width: 75%;
-  z-index: 1;
-  text-align: center;
-}
-#carouselExampleIndicators .carousel-inner .carousel-item h1 {
-  height: auto;
-  color: #fff;
-  width: 100%;
-  z-index: 1;
-  text-align: center;
-  font-size: 5.5em;
-  font-weight: 750;
-}
-#carouselExampleIndicators .carousel-inner .carousel-item p {
-  height: auto;
-  color: #ccc;
-  width: 100%;
-  z-index: 1;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: 500;
-} */
 .header-btn {
   transition: all 0.4s ease 0s;
   margin: 5rem;
@@ -660,7 +596,7 @@ body {
   justify-content: center;
   box-shadow: 0 0 1rem 0 rgba(61, 61, 61, 0.2);
   border-radius: 20px;
-  background-color: rgba(8, 8, 8, 0.15);
+  background-color: #525252a6;
   backdrop-filter: blur(5px);
   padding: 2rem;
 }
@@ -869,6 +805,7 @@ input[type="checkbox"]:checked + .card-container .card-flip {
 }
 .tl-intro {
   background-color: #101010;
+  padding-bottom: 0px;
 }
 .tl-intro p {
   color: white;
@@ -932,6 +869,7 @@ input[type="checkbox"]:checked + .card-container .card-flip {
 .modal-header {
   background-color: #101010;
   color: white;
+  padding: 2rem;
 }
 .close {
   color: white;
@@ -946,6 +884,9 @@ input[type="checkbox"]:checked + .card-container .card-flip {
 .modal-authour {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.modal-body p {
+  padding: 1rem;
 }
 .modal-footer {
   background-color: #101010;
@@ -962,16 +903,19 @@ input[type="checkbox"]:checked + .card-container .card-flip {
 @media only screen and (min-device-width: 320px) {
   .news-header {
     height: 50vh;
-    min-height: 100px;
-    background-image: url("../img/crowd-title.png");
+    background-image: url("../img/crowd-title-sm.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0px;
+    justify-content: center;
   }
-  .news-header h1 {
-    font-size: xx-large;
-    font-weight: bold;
+  .big-title {
+    display: none;
+  }
+  .little-title {
+    font-weight: bolder;
+    color: white;
   }
   .timeline-head {
     padding-top: 5rem;
@@ -981,11 +925,20 @@ input[type="checkbox"]:checked + .card-container .card-flip {
   .news-header {
     height: 50vh;
     min-height: 100px;
-    background-image: url("../img/crowd-title.png");
+    background-image: url("../img/crowd-title-med.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0px;
+  }
+  .news-title {
+    flex-direction: column;
+  }
+  .big-title {
+    display: inherit;
+  }
+  .little-title {
+    display: none;
   }
   .news-landing-top {
     height: 50vh;
@@ -1000,11 +953,14 @@ input[type="checkbox"]:checked + .card-container .card-flip {
     width: 75%;
     max-width: 1100px;
   }
-  .news-header h1 {
-    font-size: 75px;
-    font-weight: bold;
-  }
 }
 @media only screen and (min-device-width: 1024px) {
+  .news-header {
+    background-image: url("../img/crowd-title-lg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+  }
 }
 /* News Room End */
